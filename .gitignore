@@ -1,0 +1,8 @@
+# Project exclude paths
+/venv/
+.idea
+/dist/
+/data/
+/metrics/
+/models/
+.db
