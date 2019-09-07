@@ -156,6 +156,10 @@ if __name__ == '__main__':
 
     if not os.path.exists(DIST_FOLDER):
         os.mkdir(DIST_FOLDER)
+    else:
+        file_list = os.listdir(DIST_FOLDER)
+        for file in file_list:
+            os.remove(DIST_FOLDER + '/' + file)
 
     # 判断机型文件是否存在
     if not os.path.exists(MODEL_FILE):
